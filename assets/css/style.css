@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Spartan', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(230deg, #1888c1 0%, #4bfad6 100%) no-repeat center center fixed;
+    color: rgb(237, 237, 237);
+}
+
+
+.mainBodyContainer{
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 4em;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    /* border: 4px solid red; */
+}
+
+.mainElement{
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 30vw;
+    /* border: 2px solid black; */
+    padding: 0 0.5em;
+
+    height: 30vw; 
+    justify-content: center; 
+    align-items: center;
+
+    overflow: hidden;
+}
+
+h2{
+    font-family: 'Playball', cursive;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px grey;
+}
+
+img{
+    width: auto;
+    height: 100%;
+}
+
+.mainElement>p{
+    text-align: justify;
+}
+
+.mainElement>img{
+    transform: scale(1);
+    transition: transform 500ms ease-in;
+}
+
+.mainElement>img:hover{
+    transform: scale(1.35);
+}
+
+/* Element order */
+.element1{
+order: 1;
+}
+.element2{
+    order: 2;
+}
+.element3{
+    order: 4;
+}
+.element4{
+    order: 3;
+}
+.element5{
+    order: 5;
+}
+.element6{
+    order: 5;
+}
+.element7{
+    order: 8;
+}
+.element8{
+    order: 7;
+}
+.element9{
+    order: 9;
+}
+.element10{
+    order: 10;
+}
+
+/* -------------------------------------- */
+/* FOR SMALLER SCREENS */
+/* -------------------------------------- */
+
+
+@media(max-width: 801px){
+    .mainBodyContainer{
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+    }
+
+    .mainElement:nth-child(2n){
+        display: flex;
+        overflow: scroll;
+        justify-content: flex-start;
+
+        border-bottom: 1px solid rgba(150, 170, 170, 0.583);
+        margin-bottom: 1em;
+    }
+
+    /* Element order */
+.element1{
+    order: 1;
+    }
+    .element2{
+        order: 2;
+    }
+    .element3{
+        order: 3;
+    }
+    .element4{
+        order: 4;
+    }
+    .element5{
+        order: 5;
+    }
+    .element6{
+        order: 6;
+    }
+    .element7{
+        order: 7;
+    }
+    .element8{
+        order: 8;
+    }
+    .element9{
+        order: 9;
+    }
+    .element10{
+        order: 10;
+    }
+
+}

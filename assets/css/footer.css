@@ -1,0 +1,36 @@
+.footerContainer{
+    display: flex;
+    width: 100%;
+    height: 2em;
+    margin-top: 1em;
+
+    position: sticky;
+    bottom: 0;
+
+    padding: 0 3em;
+    box-sizing: border-box;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color:  rgb(24, 136, 193);
+    color: white;
+}
+
+.toTopButtonHide{
+    display: none;
+}
+
+.toTopButtonAppear{
+    display: box;
+    position: fixed;
+    bottom: 1.5em;
+    left: 1.5em;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease-in;
+}
+
+.toTopButtonAppear:hover{
+    color: rgba(255, 255, 255, 0.905);
+}
